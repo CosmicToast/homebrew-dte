@@ -1,8 +1,8 @@
 class Dte < Formula
   desc "Small and configurable console text editor"
   homepage "https://github.com/craigbarnes/dte"
-  url "https://github.com/craigbarnes/dte/archive/v1.9.1.tar.gz"
-  sha256 "80d2732269a308b5e1126ecc16c28cda032864f625a95184821a73c054f81a2d"
+  url "https://github.com/craigbarnes/dte/releases/download/v1.10/dte-1.10.tar.gz"
+  sha256 "db62aab235764f735adc8378f796d6474596582b7dae357e0bddf31304189800"
   license "GPL-2.0"
   revision 1
 
