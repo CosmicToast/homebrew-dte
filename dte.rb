@@ -14,8 +14,9 @@ class Dte < Formula
   depends_on "make" => :build
 
   def install
-    system "make", "-j#{ENV.make_jobs}"
-    system "make", "prefix=#{prefix}", "install"
+    make = OS.mac? ? Formula["make"].opt_bin/"gmake" : "make"
+    system make, "-j#{ENV.make_jobs}"
+    system make, "prefix=#{prefix}", "install"
   end
 
   test do
